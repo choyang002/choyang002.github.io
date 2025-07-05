@@ -316,6 +316,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
+  margin-top: 17%;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
@@ -456,7 +457,7 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
+  bottom: 94%;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
