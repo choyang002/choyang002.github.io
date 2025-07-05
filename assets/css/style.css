@@ -398,9 +398,17 @@ main {
   visibility: visible;
 }
 
-.contact-active {
+
+
+/* .contact-active {
   height: fit-content;
-}
+} */
+
+/* .artcle.contact-active {
+  height: fit-content;
+} */
+
+
 
 .contacts-list {
   display: grid;
