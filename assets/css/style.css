@@ -125,7 +125,7 @@
   box-sizing: border-box;
 }
 
-a.special-link { text-decoration: underline; cursor: pointer; color: rgb(255, 234, 195);}
+a.special_link { text-decoration: underline; cursor: pointer; color: rgb(255, 234, 195); }
 a { text-decoration: none;}
 
 li { list-style: none; }
