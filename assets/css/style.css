@@ -1089,7 +1089,7 @@ main {
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
 
-.blog-content { padding: 15px; }
+.blog-content { padding: 15px; text-decoration: none;}
 
 .blog-meta {
   display: flex;
@@ -1523,7 +1523,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-posts-list { gap: 30px; }
 
-  .blog-content { padding: 25px; }
+  .blog-content { padding: 25px; text-decoration: none;}
 
 
 
