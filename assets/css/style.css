@@ -398,6 +398,10 @@ main {
   visibility: visible;
 }
 
+.contact-active {
+  height: fit-content;
+}
+
 .contacts-list {
   display: grid;
   grid-template-columns: 1fr;
