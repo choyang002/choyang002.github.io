@@ -457,13 +457,13 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 92%;
+  bottom: 95%;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 12px 12px 0 0;
+  border-radius: 0px 0px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
@@ -479,7 +479,7 @@ main {
 .navbar-link {
   color: var(--light-gray);
   font-size: var(--fs-8);
-  padding: 28px 12px;
+  padding: 5px 7px;
   transition: color var(--transition-1);
 }
 
