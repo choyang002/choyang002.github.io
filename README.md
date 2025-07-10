@@ -1,6 +1,13 @@
 
 # ruyco.github.io
 
+# Copyright and Authorship
+Authors: Sadee and Russell
+
+1. The code in this repository is written as part of a personal brand and personal website of Russell's and is protected by copyright.
+
+2. This repository, including all its contents, is protected by copyright laws. If you wish to use, modify, or distribute any part of this repository, please contact [Russell] at [ruyco002@gmail.com] for more details.
+
 # vCard - Personal portfolio
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
