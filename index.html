@@ -25,11 +25,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+
+<!-- Whatsapp Floating Logo Design -->
 <!-- https://softexpert.pk/add-floating-whatsapp-to-your-website-free-easy/ -->
 <!-- <a href="https://wa.me/6594462600" style="position: fixed; z-index: 1000;"><img src="https://i.imgur.com/Gq7GVKT.png" width="76" height="76" loading="lazy" alt="WhatsAppButtonGreenSmall" style="height: auto; max-width: 100%; width: 76px; float: right; margin-left: 10px; margin-right: 0px;"></a> -->
 
-<a href="https://wa.me/6594462600" style="position: fixed; z-index: 1000; top: 87%; left: 88%; right: 4%;"><img src="https://i.imgur.com/Gq7GVKT.png" width="100%" height="100%" loading="lazy" alt="WhatsAppButtonGreenSmall" style="height: auto; max-width: 100%; width: 76px; float: right; margin-left: 10px; margin-right: 0px;" class="whatsapp-icon"></a>
+<!-- <a href="https://wa.me/6594462600" style="position: fixed; z-index: 1000; top: 87%; left: 88%; right: 4%;"><img src="https://i.imgur.com/Gq7GVKT.png" width="100%" height="100%" loading="lazy" alt="WhatsAppButtonGreenSmall" style="height: auto; max-width: 100%; width: 76px; float: right; margin-left: 10px; margin-right: 0px;" class="whatsapp-icon"></a>
+<p>&nbsp;</p> -->
+
+<div id="chatBubble" style="position: fixed; z-index: 1000; bottom: 100px; right: 20px; background: white; border-radius: 8px; padding: 12px 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); width: 180px; font-family: 'Segoe UI', Arial, sans-serif; margin-right: 80px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+<div style="font-weight: 600; font-size: 14px; color: #333;">Russell here, thanks for visiting!</div>
+<div id="closeBtn" style="cursor: pointer; font-size: 16px; color: #999; padding: 0 4px; line-height: 1;">×</div>
+</div>
+<div id="bubbleContent" style="font-size: 13px; color: #555;">Let's Connect 🖐️</div>
+<div style="position: absolute; bottom: -8px; right: 20px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid white;">&nbsp;</div>
+</div>
+<a href="https://wa.me/6594462600" style="position: fixed; z-index: 1000; bottom: 20px; right: 20px;"><img src="https://i.imgur.com/Gq7GVKT.png" width="76" height="76" loading="lazy" alt="WhatsAppButtonGreenSmall" style="height: auto; max-width: 100%; width: 76px;"></a>
 <p>&nbsp;</p>
+<script>
+    const bubble = document.getElementById('chatBubble');
+    const closeBtn = document.getElementById('closeBtn');
+    const bubbleContent = document.getElementById('bubbleContent');
+    
+    closeBtn.addEventListener('click', function() {
+        bubble.style.display = 'none';
+        
+        // Create a small circular button to reopen the bubble
+        const reopenBtn = document.createElement('div');
+        reopenBtn.innerHTML = '+';
+        reopenBtn.style.position = 'fixed';
+        reopenBtn.style.zIndex = '1000';
+        reopenBtn.style.bottom = '100px';
+        reopenBtn.style.right = '20px';
+        reopenBtn.style.width = '24px';
+        reopenBtn.style.height = '24px';
+        reopenBtn.style.background = 'white';
+        reopenBtn.style.borderRadius = '50%';
+        reopenBtn.style.display = 'flex';
+        reopenBtn.style.justifyContent = 'center';
+        reopenBtn.style.alignItems = 'center';
+        reopenBtn.style.cursor = 'pointer';
+        reopenBtn.style.boxShadow = '0 2px 6px rgba(0,0,0,0.15)';
+        reopenBtn.style.fontSize = '16px';
+        reopenBtn.style.color = '#999';
+        reopenBtn.id = 'reopenBtn';
+        
+        document.body.appendChild(reopenBtn);
+        
+        reopenBtn.addEventListener('click', function() {
+            bubble.style.display = 'block';
+            reopenBtn.remove();
+        });
+    });
+</script>
 
 <body>
 
