@@ -428,7 +428,7 @@ main {
 
 .contacts-list {
   display: grid;
-  grid-template-columns: 0fr;
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 
@@ -1881,7 +1881,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     visibility: visible;
   }
 
-  .contacts-list { grid-template-columns: 1fr; }
+  .contacts-list { grid-template-columns: 0fr; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
