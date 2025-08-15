@@ -142,9 +142,14 @@ li { list-style: none; }
 
 img, button, time, span { display: block; }
 
-ion-icon {
+.social-list ion-icon {
   display: block;
   font-size: 27px;
+}
+
+.contact-item ion-icon {
+  display: block;
+  font-size: 15px;
 }
 
 button {
