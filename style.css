@@ -140,7 +140,12 @@ a { text-decoration: none;}
 
 li { list-style: none; }
 
-img, ion-icon, button, time, span { display: block; }
+img, button, time, span { display: block; }
+
+ion-icon {
+  display: block;
+  font-size: 20px;
+}
 
 button {
   font: inherit;
@@ -1358,7 +1363,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
+  .sidebar.active { max-height: 584px; max-width: 400px; }
 
   .sidebar-info { gap: 25px; }
 
